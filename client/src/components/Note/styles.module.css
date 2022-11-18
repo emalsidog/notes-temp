@@ -1,0 +1,37 @@
+.root {
+  max-width: 200px;
+  max-height: 150px;
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  padding: 12px;
+  position: absolute;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.textarea {
+  resize: none;
+  height: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 12px;
+  user-select: none;
+}
+
+.actions > button:not(:first-child) {
+  margin-left: 8px;
+}
